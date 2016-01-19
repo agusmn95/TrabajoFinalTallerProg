@@ -8,5 +8,6 @@ namespace TP_Final
 {
     class Banner
     {
+        public int numero;
     }
 }
