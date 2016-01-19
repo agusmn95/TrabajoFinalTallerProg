@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TP_Final
 {
-    class Colorada
+    class Campaña
     {
      //Soy tan roja tomate <3
      //I'm just a poor boy, nobody loves me.
