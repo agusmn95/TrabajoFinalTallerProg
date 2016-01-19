@@ -9,5 +9,6 @@ namespace TP_Final
     class Colorada
     {
      //Soy tan roja tomate <3
+     //I'm just a poor boy, nobody loves me.
     }
 }
