@@ -11,6 +11,7 @@ namespace TP_Final
         private TimeSpan iHoraInicio;
         private TimeSpan iHoraFin;
         private DiaSemana iDia;
+        //clase SUBITE
 
     }
 }
