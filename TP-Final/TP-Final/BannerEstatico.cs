@@ -16,9 +16,17 @@ namespace TP_Final
             set { iTexto = value; }
         }
 
-        public BannerEstatico (string pTexto)
+        public BannerEstatico (string pTexto, IList<Horario> pFrecuencia, DateTime pFechaInicio, DateTime pFechaFin) : base ()
         {
+            base.Frecuencia = pFrecuencia;
+            base.FechaFin = pFechaFin;
+            base.FechaInicio = pFechaInicio;
             this.Texto = pTexto;
+        }
+
+        public string ObtenerCadena ()
+        {
+            return this.Texto;
         }
     }
 }
