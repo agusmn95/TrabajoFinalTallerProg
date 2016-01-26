@@ -2,6 +2,9 @@
 using System;
 namespace TP_Final
 {
+    /// <summary>
+    /// Clase de datos de las imágenes utilizadas en las campañas.
+    /// </summary>
     public class ImagenCampaña
     {
         private string iRuta;

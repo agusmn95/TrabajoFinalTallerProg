@@ -6,20 +6,23 @@ using System.Threading.Tasks;
 
 namespace TP_Final
 {
+    /// <summary>
+    /// Clase de datos para campañas.
+    /// </summary>
     public class Campaña
     {
         private DateTime iFechaInicio;
         private DateTime iFechaFin;
-        private Horario iHorario;
+        private IList<Horario> iHorario;
         private TimeSpan iTiempoXImagen;
         private List<ImagenCampaña> iListaImagenes;
 
         //Constructor
-        public Campaña(DateTime pFechaInicio, DateTime pFechaFin, Horario pHorario, TimeSpan pTiempoXImagen)
+        public Campaña(DateTime pFechaInicio, DateTime pFechaFin, TimeSpan pTiempoXImagen)
         {
             iFechaInicio = pFechaInicio;
             iFechaFin = pFechaFin;
-            iHorario = pHorario;
+            iHorario = new List<Horario>();
             iTiempoXImagen = pTiempoXImagen;
             iListaImagenes = new List<ImagenCampaña>();
         }
@@ -32,11 +35,15 @@ namespace TP_Final
             get { return iTiempoXImagen; }
             set { iTiempoXImagen = value; }
         }
-        public Horario Horario { get { return iHorario; } }
+        public IList<Horario> Horario { get { return iHorario; } }
         public List<ImagenCampaña> ListaImagenes { get { return iListaImagenes; } }
 
 
         //Mensajes
+        /// <summary>
+        /// Método para agregar imágenes a una campaña. Obteniendo como parámetro la ruta a la imágen a agregar.
+        /// </summary>
+        /// <param name="pRuta">Ruta en disco a la imagen.</param>
         public void AgregarImagen(string pRuta)
         {
             this.iListaImagenes.Add(new ImagenCampaña(pRuta));
