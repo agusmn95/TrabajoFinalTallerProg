@@ -10,18 +10,18 @@ namespace TP_Final
     {
         private DateTime iFechaInicio;
         private DateTime iFechaFin;
-        private Horario iHorarios;
-        private TimeSpan iTiempoImagen;
+        private Horario iHorario;
+        private TimeSpan iTiempoXImagen;
         private List<ImagenCampaña> iListaImagenes;
 
         //Constructor
-        public Campaña()
+        public Campaña(DateTime pFechaInicio, DateTime pFechaFin, Horario pHorario, TimeSpan pTiempoXImagen)
         {
-            iFechaInicio = new DateTime();
-            iFechaFin = new DateTime();
-            iHorarios = new Horario();
-            iTiempoImagen = new TimeSpan();
-            iListaImagenes = new List<ImagenCampaña>;
+            iFechaInicio = pFechaInicio;
+            iFechaFin = pFechaFin;
+            iHorario = pHorario;
+            iTiempoXImagen = pTiempoXImagen;
+            iListaImagenes = new List<ImagenCampaña>();
         }
 
         //Propiedades
@@ -29,21 +29,17 @@ namespace TP_Final
         public DateTime FechaFin { set { iFechaFin = value; } }
         public TimeSpan TiempoImagen
         {
-            get { return iTiempoImagen; }
-            set { iTiempoImagen = value; }
+            get { return iTiempoXImagen; }
+            set { iTiempoXImagen = value; }
         }
-        public Horario Horarios { set { iHorarios = value; } }
+        public Horario Horario { get { return iHorario; } }
+        public List<ImagenCampaña> ListaImagenes { get { return iListaImagenes; } }
 
 
         //Mensajes
         public void AgregarImagen(string pRuta)
         {
-            iListaImagenes.Add(new ImagenCampaña(pRuta));
-        }
-
-        public void Mostrar()
-        {
-           // TiempoImagen.TotalSeconds
+            this.iListaImagenes.Add(new ImagenCampaña(pRuta));
         }
     }
 }
