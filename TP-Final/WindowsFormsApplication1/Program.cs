@@ -16,7 +16,7 @@ namespace WindowsFormsApplication1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Programa());
+            Application.Run(new CapaVisual.NuevoRSS());
         }
     }
 }
