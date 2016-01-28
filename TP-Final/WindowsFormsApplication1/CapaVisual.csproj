@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CuadroImagen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CuadroImagen.Designer.cs">
+      <DependentUpon>CuadroImagen.cs</DependentUpon>
+    </Compile>
     <Compile Include="NuevaCampaña.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeleccionarHorarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionarHorarios.Designer.cs">
+      <DependentUpon>SeleccionarHorarios.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CuadroImagen.resx">
+      <DependentUpon>CuadroImagen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NuevaCampaña.resx">
       <DependentUpon>NuevaCampaña.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +106,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SeleccionarHorarios.resx">
+      <DependentUpon>SeleccionarHorarios.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -115,6 +133,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TP-Final\CapaNegocio.csproj">
+      <Project>{0f59b224-5b45-4519-acfe-8c445d796a98}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

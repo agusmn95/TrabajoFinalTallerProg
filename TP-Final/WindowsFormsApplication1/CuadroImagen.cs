@@ -8,22 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TP_Final
+namespace CapaVisual
 {
-    public partial class Form1 : Form
+    public partial class CuadroImagen : Form
     {
-        public Form1()
+        public CuadroImagen(string pimagen)
         {
             InitializeComponent();
+            this.pictureBox.Image = Image.FromFile(pimagen);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void pictureBox_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
+            this.Close();
         }
     }
 }

@@ -52,7 +52,6 @@
             this.lFechaFin.Size = new System.Drawing.Size(57, 13);
             this.lFechaFin.TabIndex = 3;
             this.lFechaFin.Text = "Fecha Fin:";
-            this.lFechaFin.Click += new System.EventHandler(this.label3_Click);
             // 
             // dtpFechaInicio
             // 
@@ -67,7 +66,6 @@
             this.dtpFechaFin.Name = "dtpFechaFin";
             this.dtpFechaFin.Size = new System.Drawing.Size(200, 20);
             this.dtpFechaFin.TabIndex = 5;
-            this.dtpFechaFin.ValueChanged += new System.EventHandler(this.dtpFechaFin_ValueChanged);
             // 
             // bSeleccionarHorarios
             // 
@@ -77,7 +75,7 @@
             this.bSeleccionarHorarios.TabIndex = 6;
             this.bSeleccionarHorarios.Text = "Seleccionar Horarios";
             this.bSeleccionarHorarios.UseVisualStyleBackColor = true;
-            this.bSeleccionarHorarios.Click += new System.EventHandler(this.button1_Click);
+            this.bSeleccionarHorarios.Click += new System.EventHandler(this.bSeleccionarHorarios_Click);
             // 
             // Programa
             // 
@@ -91,7 +89,6 @@
             this.Controls.Add(this.lFechaInicio);
             this.Name = "Programa";
             this.Text = "Nueva";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -7,49 +7,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TP_Final;
 
 namespace WindowsFormsApplication1
 {
     public partial class Programa : Form
     {
+        private List<Horario> iListaHorarios = new List<Horario>();
+
+        public List<Horario> ListaHorarios
+        {
+            get { return iListaHorarios; }
+        }
+
         public Programa()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        protected TimeSpan TiempoMinimo()
         {
-
+            if (iListaHorarios.Count == 0) 
+            {
+                return new TimeSpan(0, 0, 0);
+            }
+            else
+            {
+                return this.iListaHorarios.Min(elem => elem.HoraFin - elem.HoraInicio);
+            }
         }
-
-        private void label3_Click(object sender, EventArgs e)
+        private void bSeleccionarHorarios_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dtpFechaFin_ValueChanged(object sender, EventArgs e)
-        {
-
+            CapaVisual.SeleccionarHorarios vSelector = new CapaVisual.SeleccionarHorarios(iListaHorarios);
+            DialogResult resultado = vSelector.ShowDialog();
+            if (resultado == DialogResult.OK)
+            {
+            }
         }
     }
 }

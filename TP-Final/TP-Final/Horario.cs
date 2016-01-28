@@ -11,7 +11,16 @@ namespace TP_Final
         private TimeSpan iHoraInicio;
         private TimeSpan iHoraFin;
         private DiaSemana iDia;
-        //clase SUBITE
 
+        public TimeSpan HoraInicio { get { return iHoraInicio; } }
+        public TimeSpan HoraFin { get { return iHoraFin; } }
+        public DiaSemana DiaSemana { get { return iDia; } }
+
+        public Horario(DiaSemana pDia, TimeSpan pHoraInicio, TimeSpan pHoraFin)
+        {
+            iDia = pDia;
+            iHoraInicio = pHoraInicio;
+            iHoraFin = pHoraFin;
+        }
     }
 }
