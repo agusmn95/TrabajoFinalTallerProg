@@ -10,7 +10,7 @@ namespace TP_Final
     {
         static void Main()
         {
-            
+
         }
     }
 }

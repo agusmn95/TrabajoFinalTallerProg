@@ -16,12 +16,6 @@ namespace CapaVisual
             abrirImagenes.Multiselect = true;
             lvImagenes.LargeImageList = new ImageList();
             lvImagenes.LargeImageList.ImageSize = new Size(128, 128);
-            
-        }
-
-        private void listView1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
         }
 
         private void bSeleccionarImágenes_Click(object sender, EventArgs e)
@@ -37,13 +31,7 @@ namespace CapaVisual
                     lvImagenes.LargeImageList.Images.Add(rutas[i], Image.FromFile(rutas[i]));
                     lvImagenes.Items.Add(rutas[i], rutas[i]);
                 }
-                
             }
-        }
-
-        private void abrirImagenes_FileOk(object sender, CancelEventArgs e)
-        {
-            
         }
 
         private void bQuitarImagenes_Click(object sender, EventArgs e)
@@ -54,6 +42,24 @@ namespace CapaVisual
                 lvImagenes.Items.Remove(item);
                 lvImagenes.LargeImageList.Images.RemoveByKey(item.ImageKey);
             }
+        }
+
+        private void bTMS_Click(object sender, EventArgs e)
+        {
+            if (this.lvImagenes.Items.Count != 0)
+            {
+                decimal tiempoMinimoImagenMinutos = Convert.ToDecimal(TiempoMinimo().TotalMinutes / lvImagenes.Items.Count);
+                this.numHH.Value = Convert.ToInt32(tiempoMinimoImagenMinutos / 60);
+                this.numMM.Value = Convert.ToInt32(tiempoMinimoImagenMinutos - this.numHH.Value);
+            }
+        }
+
+        private void lvImagenes_DoubleClick(object sender, EventArgs e)
+        {
+            string imagen = lvImagenes.SelectedItems[0].ImageKey;
+
+            CapaVisual.CuadroImagen ventanitadelamor = new CapaVisual.CuadroImagen(imagen);
+            ventanitadelamor.ShowDialog();
         }
     }
 }
