@@ -48,13 +48,13 @@
             this.dtpViernesFin = new System.Windows.Forms.DateTimePicker();
             this.dtpViernesInicio = new System.Windows.Forms.DateTimePicker();
             this.dtpJuevesFin = new System.Windows.Forms.DateTimePicker();
-            this.dtpMiercolesFin = new System.Windows.Forms.DateTimePicker();
-            this.dtpMartesInicio = new System.Windows.Forms.DateTimePicker();
-            this.dtpMartesFin = new System.Windows.Forms.DateTimePicker();
-            this.dtpMiercolesInicio = new System.Windows.Forms.DateTimePicker();
             this.dtpJuevesInicio = new System.Windows.Forms.DateTimePicker();
-            this.dtpLunesInicio = new System.Windows.Forms.DateTimePicker();
+            this.dtpMiercolesFin = new System.Windows.Forms.DateTimePicker();
+            this.dtpMiercolesInicio = new System.Windows.Forms.DateTimePicker();
+            this.dtpMartesFin = new System.Windows.Forms.DateTimePicker();
+            this.dtpMartesInicio = new System.Windows.Forms.DateTimePicker();
             this.dtpLunesFin = new System.Windows.Forms.DateTimePicker();
+            this.dtpLunesInicio = new System.Windows.Forms.DateTimePicker();
             this.tableHorarios.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -190,7 +190,7 @@
             this.tableHorarios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableHorarios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
             this.tableHorarios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableHorarios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 12F));
+            this.tableHorarios.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 11F));
             this.tableHorarios.Controls.Add(this.dtpDomingoFin, 4, 7);
             this.tableHorarios.Controls.Add(this.dtpDomingoInicio, 2, 7);
             this.tableHorarios.Controls.Add(this.dtpSabadoFin, 4, 6);
@@ -341,6 +341,22 @@
             this.dtpJuevesFin.TabIndex = 17;
             this.dtpJuevesFin.Visible = false;
             // 
+            // dtpJuevesInicio
+            // 
+            this.dtpJuevesInicio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtpJuevesInicio.CustomFormat = "HH:mm";
+            this.dtpJuevesInicio.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpJuevesInicio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpJuevesInicio.Location = new System.Drawing.Point(113, 100);
+            this.dtpJuevesInicio.Name = "dtpJuevesInicio";
+            this.dtpJuevesInicio.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dtpJuevesInicio.ShowUpDown = true;
+            this.dtpJuevesInicio.Size = new System.Drawing.Size(53, 20);
+            this.dtpJuevesInicio.TabIndex = 12;
+            this.dtpJuevesInicio.Visible = false;
+            // 
             // dtpMiercolesFin
             // 
             this.dtpMiercolesFin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -356,38 +372,6 @@
             this.dtpMiercolesFin.Size = new System.Drawing.Size(53, 20);
             this.dtpMiercolesFin.TabIndex = 16;
             this.dtpMiercolesFin.Visible = false;
-            // 
-            // dtpMartesInicio
-            // 
-            this.dtpMartesInicio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpMartesInicio.CustomFormat = "HH:mm";
-            this.dtpMartesInicio.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dtpMartesInicio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpMartesInicio.Location = new System.Drawing.Point(113, 52);
-            this.dtpMartesInicio.Name = "dtpMartesInicio";
-            this.dtpMartesInicio.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dtpMartesInicio.ShowUpDown = true;
-            this.dtpMartesInicio.Size = new System.Drawing.Size(53, 20);
-            this.dtpMartesInicio.TabIndex = 4;
-            this.dtpMartesInicio.Visible = false;
-            // 
-            // dtpMartesFin
-            // 
-            this.dtpMartesFin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpMartesFin.CustomFormat = "HH:mm";
-            this.dtpMartesFin.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dtpMartesFin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpMartesFin.Location = new System.Drawing.Point(182, 52);
-            this.dtpMartesFin.Name = "dtpMartesFin";
-            this.dtpMartesFin.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dtpMartesFin.ShowUpDown = true;
-            this.dtpMartesFin.Size = new System.Drawing.Size(53, 20);
-            this.dtpMartesFin.TabIndex = 5;
-            this.dtpMartesFin.Visible = false;
             // 
             // dtpMiercolesInicio
             // 
@@ -405,37 +389,37 @@
             this.dtpMiercolesInicio.TabIndex = 11;
             this.dtpMiercolesInicio.Visible = false;
             // 
-            // dtpJuevesInicio
+            // dtpMartesFin
             // 
-            this.dtpJuevesInicio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dtpMartesFin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpJuevesInicio.CustomFormat = "HH:mm";
-            this.dtpJuevesInicio.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dtpJuevesInicio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpJuevesInicio.Location = new System.Drawing.Point(113, 100);
-            this.dtpJuevesInicio.Name = "dtpJuevesInicio";
-            this.dtpJuevesInicio.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dtpJuevesInicio.ShowUpDown = true;
-            this.dtpJuevesInicio.Size = new System.Drawing.Size(53, 20);
-            this.dtpJuevesInicio.TabIndex = 12;
-            this.dtpJuevesInicio.Visible = false;
+            this.dtpMartesFin.CustomFormat = "HH:mm";
+            this.dtpMartesFin.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpMartesFin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpMartesFin.Location = new System.Drawing.Point(182, 52);
+            this.dtpMartesFin.Name = "dtpMartesFin";
+            this.dtpMartesFin.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dtpMartesFin.ShowUpDown = true;
+            this.dtpMartesFin.Size = new System.Drawing.Size(53, 20);
+            this.dtpMartesFin.TabIndex = 5;
+            this.dtpMartesFin.Visible = false;
             // 
-            // dtpLunesInicio
+            // dtpMartesInicio
             // 
-            this.dtpLunesInicio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dtpMartesInicio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpLunesInicio.CustomFormat = "HH:mm";
-            this.dtpLunesInicio.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dtpLunesInicio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpLunesInicio.Location = new System.Drawing.Point(113, 28);
-            this.dtpLunesInicio.Name = "dtpLunesInicio";
-            this.dtpLunesInicio.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dtpLunesInicio.ShowUpDown = true;
-            this.dtpLunesInicio.Size = new System.Drawing.Size(53, 20);
-            this.dtpLunesInicio.TabIndex = 25;
-            this.dtpLunesInicio.Visible = false;
+            this.dtpMartesInicio.CustomFormat = "HH:mm";
+            this.dtpMartesInicio.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpMartesInicio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpMartesInicio.Location = new System.Drawing.Point(113, 52);
+            this.dtpMartesInicio.Name = "dtpMartesInicio";
+            this.dtpMartesInicio.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dtpMartesInicio.ShowUpDown = true;
+            this.dtpMartesInicio.Size = new System.Drawing.Size(53, 20);
+            this.dtpMartesInicio.TabIndex = 4;
+            this.dtpMartesInicio.Visible = false;
             // 
             // dtpLunesFin
             // 
@@ -452,6 +436,22 @@
             this.dtpLunesFin.Size = new System.Drawing.Size(53, 20);
             this.dtpLunesFin.TabIndex = 26;
             this.dtpLunesFin.Visible = false;
+            // 
+            // dtpLunesInicio
+            // 
+            this.dtpLunesInicio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtpLunesInicio.CustomFormat = "HH:mm";
+            this.dtpLunesInicio.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtpLunesInicio.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpLunesInicio.Location = new System.Drawing.Point(113, 28);
+            this.dtpLunesInicio.Name = "dtpLunesInicio";
+            this.dtpLunesInicio.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dtpLunesInicio.ShowUpDown = true;
+            this.dtpLunesInicio.Size = new System.Drawing.Size(53, 20);
+            this.dtpLunesInicio.TabIndex = 25;
+            this.dtpLunesInicio.Visible = false;
             // 
             // SeleccionarHorarios
             // 

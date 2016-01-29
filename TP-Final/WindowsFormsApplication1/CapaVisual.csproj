@@ -96,7 +96,7 @@
     <Compile Include="CuadroImagen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CuadroImagen.Designer.cs">
+    <Compile Include="CuadroImagen.designer.cs">
       <DependentUpon>CuadroImagen.cs</DependentUpon>
     </Compile>
     <Compile Include="NuevaCampaña.cs">
@@ -119,8 +119,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SeleccionarHorarios.cs" />
-    <Compile Include="SeleccionarHorarios.Designer.cs">
+    <Compile Include="SeleccionarHorarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionarHorarios.designer.cs">
       <DependentUpon>SeleccionarHorarios.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="CuadroImagen.resx">
